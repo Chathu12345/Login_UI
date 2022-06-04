@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'login_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home,: LoginPage(), // This trailing comma makes auto-formatting nicer for build methods.
+      home: LoginPage(), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
