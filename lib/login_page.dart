@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -16,14 +17,19 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: Colors.grey[300],
       body: SafeArea(
         child: Center(
-          child: Column(children: [
-            SizedBox(height: 10),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.phone_android,
+                size: 100,
+                ),
+              SizedBox(height: 75),
             //Hello again
             Text(
               'Hello Again!',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 24,
+              style: GoogleFonts.bebasNeue(
+                fontSize: 54,
               ),
             ),
             SizedBox(height: 10),
@@ -34,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
                 fontSize: 20,
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 50),
 
             //email textField
             Padding(
@@ -100,10 +106,11 @@ class _LoginPageState extends State<LoginPage> {
                 )),
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 25),
 
             //not a member? register now
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   'Not a member?',
