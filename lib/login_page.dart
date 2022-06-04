@@ -50,7 +50,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: TextField(
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: 'Type Your Email Here', 
+                      hintText: 'Type Your Email Here',
                     ),
                   ),
                 ),
@@ -73,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                     obscureText: true,
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: 'Enter Password', 
+                      hintText: 'Enter Password',
                     ),
                   ),
                 ),
@@ -85,19 +85,41 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: Container(
+                padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: Colors.deepPurple
-                ),
+                    color: Colors.deepPurple,
+                    borderRadius: BorderRadius.circular(12)),
                 child: Center(
-                  child: Text(
-                    'Sign In',
-                    style: TextStyle(color: Colors.white),
-                    )
+                    child: Text(
+                  'Sign In',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
                   ),
+                )),
               ),
-            )
+            ),
+            SizedBox(height: 10),
 
             //not a member? register now
+            Row(
+              children: [
+                Text(
+                  'Not a member?',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  'Register Now',
+                  style: TextStyle(
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
+            )
           ]),
         ),
       ),
